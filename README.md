@@ -20,7 +20,7 @@ runbook from a fresh install.
 ## Try it without installing
 
 ```sh
-nix run github:aijorgenson/lerd-nixos -- --help
+nix run github:lerd-env/lerd-nixos -- --help
 ```
 
 ## Add it to your flake
@@ -36,7 +36,7 @@ overlay (`overlays.default`).
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     lerd = {
-      url = "github:aijorgenson/lerd-nixos";
+      url = "github:lerd-env/lerd-nixos";
       # Build lerd against your own nixpkgs instead of the one it pins,
       # so you don't download a second copy of nixpkgs:
       inputs.nixpkgs.follows = "nixpkgs";
